@@ -59,7 +59,7 @@ class Employee extends Person {
         this.jobTitle = jobTitle;
     }
     getJobTitle() {
-        return `${this.jobTitle}`;
+        return this.jobTitle;
     }
 }
 
@@ -70,7 +70,7 @@ class Employee extends Person {
 // jobTitle: "Developer"
 //
 // Store the new instance in the `ana` variable
-const ana = new Person("Ana", "Spark", "Developer");
+const ana = new Employee("Ana", "Spark", "Developer");
 
 // Don’t change the code bellow this line
 export { Person, Employee, ana };
