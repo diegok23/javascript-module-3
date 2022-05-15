@@ -10,6 +10,7 @@
   background-color: #666666;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 #main {
@@ -43,6 +44,17 @@
   background-color: #29dbff;
   z-index: 2;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.titleImg {
+  display: flex;
+  margin-top: 25px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.titleImg img{
+  width: 70%;
 }
 
 .episodeLink {
@@ -141,3 +153,38 @@
   margin: 20px;
   height: 150px;
 }
+
+.locationButton{
+  text-align: center;
+  margin: 5px;
+}
+
+#locationButton{
+  background-color: #8fa500;
+  color: #000000;
+  width: 80%;
+  height: 30px;
+  margin: 25px;
+  font-size: 1.3rem;
+  border: none;
+  transition: 0.5s;
+}
+
+.characterCardDetail {
+  margin: 0 50px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 55px;
+  grid-row-gap: 10px;
+}
+
+.episodeNumber {
+  box-shadow: 3px 3px 3px 3px #0000003b;
+  background: #cffdff;
+  border-radius: 4px;
+  font-size: large;
+  padding: 5px;
+  cursor: pointer;
+}
+
